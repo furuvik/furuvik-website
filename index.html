@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furuvik Farms</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bernier+Shade&family=Inlander+Texture&display=swap" rel="stylesheet">
+    <style>
+        body { margin:0; font-family: Arial, sans-serif; color: #333; background-color: #f9f5f0; }
+        a { text-decoration: none; color: inherit; }
+        .container { width: 90%; max-width: 1200px; margin: auto; }
+        h1,h2,h3,h4 { margin: 0; }
+        .btn { display: inline-block; padding: 10px 20px; background-color: #8d6e63; color: #fff; border-radius: 5px; margin-top: 10px; }
+
+        header { background: url('images/hero-ai-chocolate.jpg') no-repeat center center/cover; color: #fff; text-align: center; padding: 120px 20px; }
+        header h1 { font-family: 'Bernier Shade', serif; font-size: 60px; }
+        header h2.tagline { font-family: 'Inlander Texture', cursive; font-size: 28px; margin-top: 10px; letter-spacing: 2px; }
+        header .cta { margin-top: 20px; }
+
+        nav { display: flex; justify-content: center; background-color: #e0dcd3; padding: 15px; flex-wrap: wrap; }
+        nav a { margin: 5px 15px; font-weight: bold; color: #333; }
+
+        .categories { display: flex; justify-content: space-around; flex-wrap: wrap; margin: 60px 0; }
+        .category { width: 300px; text-align: center; margin-bottom: 30px; background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .category:hover { transform: translateY(-5px); }
+        .category img { width: 100%; border-radius: 10px; }
+        .category h3 { margin-top: 15px; font-size: 22px; }
+
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin: 40px 0; }
+        .product { background: #fff; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .product img { width: 100%; border-radius: 10px; }
+        .product h4 { margin: 10px 0; }
+
+        .tabs { display: flex; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
+        .tab { padding: 10px 20px; margin: 5px; background: #8d6e63; color: #fff; border-radius: 5px; cursor: pointer; }
+        .tab.active { background: #5d4c43; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .story { background-color: #e0dcd3; padding: 60px 20px; text-align: center; }
+        .story h2 { margin-bottom: 20px; font-size: 32px; }
+        .story p { max-width: 800px; margin: auto; font-size: 18px; line-height: 1.6; }
+
+        footer { background-color: #333; color: #fff; padding: 30px 20px; text-align: center; }
+        footer a { color: #fff; margin: 0 10px; }
+
+        @media(max-width: 768px) { .categories { flex-direction: column; align-items: center; } }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#dark-chocolate">Dark Chocolate</a>
+        <a href="#spices">Spices</a>
+        <a href="#instant-drinks">Instant Drinks</a>
+        <a href="#story">Our Story</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>FURUVIK FARMS</h1>
+        <h2 class="tagline">ETHICAL • CONSCIOUS</h2>
+        <div class="cta">
+            <a href="#categories" class="btn">Explore Our Products</a>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section id="categories" class="container categories">
+        <div class="category">
+            <img src="images/dark-chocolate-ai.jpg" alt="Dark Chocolate">
+            <h3>Dark Chocolate Bars</h3>
+            <a href="#dark-chocolate" class="btn">Subscribe</a>
+        </div>
+        <div class="category">
+            <img src="images/spices-ai.jpg" alt="Spices">
+            <h3>Spices</h3>
+            <a href="#spices" class="btn">Subscribe</a>
+        </div>
+        <div class="category">
+            <img src="images/instant-drinks-ai.jpg" alt="Instant Drinks">
+            <h3>Instant Drinks</h3>
+            <a href="#instant-drinks" class="btn">Subscribe</a>
+        </div>
+    </section>
+
+    <!-- Dark Chocolate Section -->
+    <section id="dark-chocolate" class="container">
+        <h2>Dark Chocolate Bars</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/classic-dark.jpg" alt="Classic Dark">
+                <h4>Classic Dark</h4>
+                <p>Flavors: Nuts & Fruits, Coconut, Coffee, Caramel.<br>Made from raw cacao powder & butter, naturally sweetened with dates or coconut sugar. Vegan, refined sugar-free.</p>
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+            <div class="product">
+                <img src="images/vedic-dark.jpg" alt="Vedic Dark">
+                <h4>Vedic Dark</h4>
+                <p>Infused with Ayurvedic herbs and plants. Coming Soon.</p>
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+            <div class="product">
+                <img src="images/active-dark.jpg" alt="ActiveDark">
+                <h4>ActiveDark</h4>
+                <p>High-protein, fitness-focused chocolate. Premium indulgence.</p>
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spices Section -->
+    <section id="spices" class="container">
+        <h2>Premium Spices</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/cardamom.jpg" alt="Cardamom">
+                <h4>Cardamom (8mm Bold)</h4>
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+            <div class="product">
+                <img src="images/black-pepper.jpg" alt="Black Pepper">
+                <h4>Black Pepper</h4>
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+            <div class="product">
+                <img src="images/white-pepper.jpg" alt="White Pepper">
+                <h4>White Pepper</h4>
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+            <div class="product">
+                <img src="images/clove.jpg" alt="Clove">
+                <h4>Clove</h4>
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instant Drinks Section -->
+    <section id="instant-drinks" class="container">
+        <h2>Instant Drinks</h2>
+        <div class="tabs">
+            <div class="tab active" data-tab="powders">Powders</div>
+            <div class="tab" data-tab="other">Other Drinks</div>
+            <div class="tab" data-tab="custom">Customize</div>
+        </div>
+        <div id="powders" class="tab-content active products">
+            <div class="product">
+                <img src="images/protein-powder.jpg" alt="Protein Powder">
+                <h4>High-Protein Powder</h4>
+                <p>For shakes, desserts, and healthy meals.</p>
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+        </div>
+        <div id="other" class="tab-content products">
+            <div class="product">
+                <img src="images/coffee-drink.jpg" alt="Coffee Drink">
+                <h4>Coffee Drink</h4>
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+            <div class="product">
+                <img src="images/chocolate-drink.jpg" alt="Chocolate Drink">
+                <h4>Chocolate Drink</h4>
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+        </div>
+        <div id="custom" class="tab-content">
+            <h4>Customize Your Drink</h4>
+            <p>Select your base powder, flavor additions, and protein level.</p>
+            <form>
+                <input type="text" placeholder="Your Name" required><br><br>
+                <input type="email" placeholder="Your Email" required><br><br>
+                <textarea placeholder="Your Custom Blend Details" required></textarea><br><br>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="story" class="story">
+        <h2>Our Story</h2>
+        <p>
+            FURUVIK FARMS is more than just a brand — it’s a movement towards ethical, conscious indulgence. Every chocolate, spice, and health drink we craft is made with raw cacao powder, raw cacao butter, and natural sweeteners like dates or coconut sugar, reflecting our commitment to purity, wellness, and sustainability.<br><br>
+            We believe in giving back. 4% of our net profits are dedicated to empowering women in mountain villages, helping them build livelihoods, preserve their traditions, and thrive. At the same time, we actively support initiatives that protect nature and ecosystems, ensuring that every product you enjoy contributes to a healthier planet.<br><br>
+            By choosing Furuvik Farms, you’re not only indulging in premium, plant-based goodness, you’re also participating in a larger purpose — nurturing communities and the Earth, one chocolate, one spice, and one drink at a time.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Connect with us: 
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">Email</a>
+        </p>
+        <p>&copy; 2026 Furuvik Farms. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Tabs functionality
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const target = tab.getAttribute('data-tab');
+                contents.forEach(c => c.classList.remove('active'));
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
